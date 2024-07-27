@@ -36,7 +36,6 @@ button[type="button"] {
     padding-left: 12px;
     padding: 12px 8px 12px;
     width: 100%;
-    border-radius: 4px;
     border: 0px;
     background-color: transparent;
     font-size: 16px;
@@ -46,6 +45,8 @@ button[type="button"] {
 button[type="button"]:hover {
     background-color: rgb(78, 72, 156);
     color: #fff;
+    border-radius: 0px;
+    border-left: 4px solid #fff;
 }
 
 .img-container {
