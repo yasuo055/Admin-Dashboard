@@ -1,22 +1,46 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #363740;
+    --tertiary-color: #E2E8F0;
+    --light-secondary-color: #DDD5D0;
+    --link-color: #5E73FF;
 
-:root{
-    --color: #fff;
+    /* Font */
+    --primary-font-color: #252733;
+    --secondary-font-color: #A4A6B3;
+    --tertiary-font-color: #9fa2b4;
+
 }
 
 *,
 *::after,
 *::before {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* Icons */
 
-body {
-    font-family: "Mulish", sans-serif;
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
 }
 
 .container {
+    font-family: "Mulish", sans-serif;
     min-height: 100vh;
     height: 100%;
     display: grid;
@@ -25,26 +49,41 @@ body {
     background-color: #f7f8fc;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+/* Logo */
+
+.logo {
+    font-size: 2rem;
+    margin-left: 17px;
+    font-weight: 700;
+    padding: 4px;
+}
+
+
+/* Buttons */
+
+button .material-icons {
+    margin-right: 16px; 
 }
 
 button[type="button"] {
-    padding-left: 12px;
-    padding: 12px 8px 12px;
+    padding: 12px;
+    padding-left: 16px;
     width: 100%;
     border: 0px;
     background-color: transparent;
     font-size: 16px;
-    text-align: left;
+    font-family: "Mulish", sans-serif, Arial, Helvetica;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    color: #A4A6B3;
+    display: flex;
+    align-items: center;
 }
 
 button[type="button"]:hover {
-    background-color: rgb(78, 72, 156);
-    color: #fff;
+    background-color: #3E4049;
+    color: #DDD5D0;
     border-radius: 0px;
     border-left: 4px solid #fff;
 }
@@ -55,27 +94,34 @@ button[type="button"]:hover {
 
 /* sidebar style */
 
+.sidebar {
+    grid-row: 1 / span 5;
+    background-color: var(--secondary-color);
+    color: #a4a6b3;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    position: relative;
+}
+
 .sidebar-nav {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-.sidebar {
-    grid-row: 1 / span 5;
-    background-color: aqua;
+ul {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    padding: 8px;
 }
-
 
 
 .header {
-    background-color: aquamarine;
+    background-color: var(--primary-color);
 }
 
 .main {
-    background-color: bisque;
+    background-color: var(--tertiary-color);
     /* height: 97vh; */
 }
