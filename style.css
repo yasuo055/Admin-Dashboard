@@ -53,6 +53,18 @@
   color: var(--icon-color);
 }
 
+#dashboard-icon {
+  font-size: 45px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 48px 0px 12px;
+  padding-right: 48px;
+}
+
 .sidebar-nav li:hover span {
   color: #dde2ff;
 }
@@ -71,7 +83,7 @@
 
 .logo {
   font-size: 2rem;
-  margin-left: 24px;
+  margin-left: 4px;
   font-weight: 700;
   padding: 4px;
 }
@@ -107,24 +119,21 @@ button[type="button"]:hover {
   border-left: 4px solid #fff;
 }
 
-.img-container {
-  margin-bottom: 32px;
-}
-
 /* sidebar style */
 
 .sidebar {
   grid-row: 1 / span 5;
   background-color: var(--secondary-color);
   color: #a4a6b3;
-  padding-top: 8px;
+  padding-top: 24px;
   position: relative;
 }
 
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 15.5rem;
+  gap: 2rem;
+  margin-top: 34px;
 }
 
 ul {
@@ -140,7 +149,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items:center;
-  padding: 12px 32px 12px;
+  padding: 38px 32px 12px;
 }
 
 .con {
@@ -237,5 +246,9 @@ input[type="button"]:hover {
 
 .main {
   background-color: var(--tertiary-color);
-  /* height: 97vh; */
+  height: 79vh;
+  text-align: center;
+  font-size: 64px;
 }
+
+

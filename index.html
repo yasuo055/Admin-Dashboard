@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
-
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
 </head>
@@ -17,8 +16,10 @@
 <body>
   <div class="container">
     <div class="sidebar">
-      <p class="logo">Dashboard</p>
-      <div class="img-container"></div>
+      <div class="logo-container">
+        <span class="material-symbols-outlined" id="dashboard-icon"> dashboard </span>
+        <p class="logo">Dashboard</p>
+      </div>
 
       <div class="sidebar-nav">
         <ul>
@@ -39,16 +40,13 @@
           </li>
           <li>
             <button type="button">
-              <span class="material-symbols-outlined">
-                schedule
-              </span>
+              <span class="material-symbols-outlined"> schedule </span>
               History
             </button>
           </li>
           <li>
             <button type="button">
-              <span class="material-symbols-outlined">
-                task</span>Tasks
+              <span class="material-symbols-outlined"> task</span>Tasks
             </button>
           </li>
           <li>
@@ -77,31 +75,30 @@
       </div>
     </div>
     <div class="header">
-
       <div class="con">
-        <input type="text" name="search-box" id="search-box" placeholder="Search...">
+        <input type="text" name="search-box" id="search-box" placeholder="Search..." />
         <span class="material-icons">search</span>
       </div>
 
       <div class="cont">
-        <span class="material-symbols-outlined" id="notif">notifications_active </span>
+        <span class="material-symbols-outlined" id="notif">notifications_active
+        </span>
         <div class="circle"></div>
         <p>Yasuo S. Yone</p>
       </div>
-
-
-
     </div>
 
     <div class="info">
       <div>
         <div class="circle2"></div>
-        <div class="greet"><span>Hi there,</span> Yasuo S. Yone (@Cancer)</div>
+        <div class="greet">
+          <span>Hi there,</span> Yasuo S. Yone (@Cancer)
+        </div>
       </div>
       <div class="button-container">
-        <input type="button" value="New">
-        <input type="button" value="Upload">
-        <input type="button" value="Share">
+        <input type="button" value="New" />
+        <input type="button" value="Upload" />
+        <input type="button" value="Share" />
       </div>
     </div>
 
