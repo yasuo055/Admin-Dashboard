@@ -39,6 +39,14 @@
     vertical-align: middle;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24 ;
+}
+
 .container {
     font-family: "Mulish", sans-serif;
     min-height: 100vh;
@@ -58,10 +66,9 @@
     padding: 4px;
 }
 
-
 /* Buttons */
 
-button .material-icons {
+button .material-icons, button .material-symbols-outlined {
     margin-right: 16px; 
 }
 
