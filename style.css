@@ -61,7 +61,7 @@
   display: flex;
   justify-items: center;
   align-items: center;
-  padding: 0px 12px 0px 12px;
+  padding: 0px 0px 0px 24px;
 }
 
 .sidebar-nav li:hover span {
@@ -151,14 +151,19 @@ ul {
   padding: 24px 32px 0px;
 }
 
+.title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .con {
   position: relative;
   display: flex;
-  justify-self: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   max-width: 500px;
-  gap: 12px;
+  gap: 32px;
 }
 
 .cont {
