@@ -59,10 +59,9 @@
 
 .logo-container {
   display: flex;
-  justify-content: space-between;
+  justify-items: center;
   align-items: center;
-  padding: 12px 48px 0px 12px;
-  padding-right: 48px;
+  padding: 0px 12px 0px 12px;
 }
 
 .sidebar-nav li:hover span {
@@ -149,7 +148,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items:center;
-  padding: 38px 32px 12px;
+  padding: 24px 32px 0px;
 }
 
 .con {
@@ -199,19 +198,20 @@ ul {
   display: block;
   line-height: 1.5;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .greet span {
   font-size: 12px;
   font-weight: 600;
-  display: block; /* Forces the span to act as a block element */
+  display: block;
 }
 
 .info {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 32px 12px;
+  padding: 10px 32px;
 }
 
 .info > div {
