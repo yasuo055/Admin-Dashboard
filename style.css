@@ -173,7 +173,7 @@ ul {
 }
 
 .con input {
-  border-radius: 12px;
+  border-radius: 18px;
   border: 2px solid var(--icon-color);
   width: 500px;
   height: 36px;
