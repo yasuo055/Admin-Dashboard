@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta user-name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin-Dashboard</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -88,14 +88,14 @@
 
       <div class="header">
 
-        <div class="top-header">
+        <div class="upper-header">
           <div class="search-bar">
             <div class="search-img clickable">
               <span class="material-icons search-icon">search</span>
             </div>
-              <!-- make it an input matching the form -->
+              <!-- for search-box -->
               <form id="myform" method="get" action="#">
-                <input class="search-input" type="text" id="searchresult" name="searchresult" value=""> <br /><br />
+                <input class="search-input" type="text" id="search-result" user-name="search-result" value=""> 
             </form>
           </div>
 
@@ -109,18 +109,18 @@
           </div>
         </div>
 
-        <div class="bottom-header">
+        <div class="lower-header">
             <div class="profile-display">
               <div class="clickable profile-pic-large"></div>
-              <div class="name-greeting">
-                  <div class="greeting">Hi there,</div>
-                  <div class="name">Yasuo S. Yone (@cancer)</div>
+              <div class="user-greetings">
+                  <div class="greetings">Hi there,</div>
+                  <div class="user-name">Yasuo S. Yone (@cancer)</div>
               </div>
             </div>
-            <div class="make-post">
-              <input type="button" class="head-button clickable" value="New" />
-              <input type="button" class="head-button clickable" value="Upload" />
-              <input type="button" class="head-button clickable" value="Share" />
+            <div class="button-container">
+              <input type="button" class="header-button clickable" value="New" />
+              <input type="button" class="header-button clickable" value="Upload" />
+              <input type="button" class="header-button clickable" value="Share" />
             </div>            
         </div>
       </div>

@@ -158,14 +158,16 @@ button[type="button"]:hover {
   box-shadow: 0px 2px 3px rgb(175, 175, 175);
 }
 
-.top-header {
+.upper-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 48px;
 }
 
 .search-bar {
   display: flex;
-  padding: 17px 0px 0px 30px;
+  padding: 0px 0px 0px 30px;
 }
 
 .search-icon {
@@ -224,11 +226,11 @@ button[type="button"]:hover {
   flex: 0 0 auto;
 }
 
-.bottom-header {
+.lower-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  margin: 20px 20px 0px 30px;
+  align-items: center;
+  padding: 20px 20px 0px 30px;
 }
 
 .profile-display {
@@ -239,40 +241,36 @@ button[type="button"]:hover {
   margin-right: 12px;
 }
 
-.greeting {
+.greetings {
   font-size: 12px;
   margin-bottom: 5px;
   padding-left: 5px;
 }
 
-.name {
+.user-name {
   font-size: 23px;
 }
 
-.make-post {
+.button-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 25vw;
   max-width: 276px;
   min-width: 263px;
-  margin-bottom: 18px;
-
 }
 
-.head-button {
+.header-button {
   color: white;
-  font-weight: 500;
-  background-color: rgba(25,146,212,255);
+  font-weight: 700;
+  background-color: #5e73ff;
   width: 75px;
   height: 30px;
   border-radius: 15px;
   border: none;
-  margin-bottom: 5px;
-  margin-right: 10px;
 }
 
-
+/* Main */
 
 
 
