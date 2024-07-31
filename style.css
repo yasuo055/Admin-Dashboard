@@ -200,13 +200,6 @@ ul {
   height: 24px;
 }
 
-/* .circle {
-  background-color: #5e73ff;
-  width: 25px;
-  height: 25px;
-  border-radius: 15px;
-} */
-
 .greet {
   display: block;
   line-height: 1.5;
@@ -260,11 +253,24 @@ input[type="button"]:hover {
 
 h3 {
   display: inline;
+  padding: 12px auto 4px;
 }
 
 .title-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  position: relative;
+}
 
+.left-title {
+  margin-left: 24px;
+}
+
+.right-title {
+  position: absolute;
+  right: 260px;
 }
 
 .main {
@@ -305,10 +311,10 @@ h3 {
 
 .con-1 {
   width: 95%;
-  padding: 18px;
+  padding: 4px 24px 12px;
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 18px;
 }
 
 .card {
@@ -359,10 +365,11 @@ p {
 }
 
 .con-2 {
-  padding: 18px;
+  padding: 4px 24px 12px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  align-items: center;
 }
 
 .divider {
