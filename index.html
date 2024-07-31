@@ -1,228 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin-Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin-Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
-</head>
+  <body>
+    <div class="container">
+      
+      <!-- Sidebar -->
 
-<body>
-  <div class="container">
-    <div class="sidebar">
-      <div class="logo-container">
-        <span class="material-symbols-outlined" id="dashboard-icon"> dashboard </span>
-        <p class="logo">Dashboard</p>
+      <div class="sidebar">
+        <div class="logo-container">
+          <span class="material-symbols-outlined" id="dashboard-icon">
+            dashboard
+          </span>
+          <p class="logo">Dashboard</p>
+        </div>
+
+        <div class="sidebar-nav">
+          <ul>
+            <li>
+              <button type="button">
+                <span class="material-icons">home</span>Home
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <span class="material-icons">account_circle</span>Profile
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <span class="material-icons">message</span>Messages
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <span class="material-symbols-outlined"> schedule </span>
+                History
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <span class="material-symbols-outlined"> task</span>Tasks
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <span class="material-icons">forum</span>Communication
+              </button>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <button type="button">
+                <span class="material-icons">settings</span>Settings
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <span class="material-icons">support</span>Support
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <span class="material-icons">privacy_tip</span>Privacy
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="sidebar-nav">
-        <ul>
-          <li>
-            <button type="button">
-              <span class="material-icons">home</span>Home
-            </button>
-          </li>
-          <li>
-            <button type="button">
-              <span class="material-icons">account_circle</span>Profile
-            </button>
-          </li>
-          <li>
-            <button type="button">
-              <span class="material-icons">message</span>Messages
-            </button>
-          </li>
-          <li>
-            <button type="button">
-              <span class="material-symbols-outlined"> schedule </span>
-              History
-            </button>
-          </li>
-          <li>
-            <button type="button">
-              <span class="material-symbols-outlined"> task</span>Tasks
-            </button>
-          </li>
-          <li>
-            <button type="button">
-              <span class="material-icons">forum</span>Communication
-            </button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <button type="button">
-              <span class="material-icons">settings</span>Settings
-            </button>
-          </li>
-          <li>
-            <button type="button">
-              <span class="material-icons">support</span>Support
-            </button>
-          </li>
-          <li>
-            <button type="button">
-              <span class="material-icons">privacy_tip</span>Privacy
-            </button>
-          </li>
-        </ul>
+      <!-- Header -->
+
+      <div class="header">
+
+        <div class="top-header">
+          <div class="search-bar">
+            <div class="search-img clickable">
+              <span class="material-icons search-icon">search</span>
+            </div>
+              <!-- make it an input matching the form -->
+              <form id="myform" method="get" action="#">
+                <input class="search-input" type="text" id="searchresult" name="searchresult" value=""> <br /><br />
+            </form>
+          </div>
+
+          <div class="profile-bar">
+              <div class="clickable prof-bar">
+                <span class="material-symbols-outlined" id="notif" >notifications_active
+                </span>
+                <div class="profile-pic-small"></div>
+                <div class="clickable">Yasuo S. Yone</div>
+              </div>
+          </div>
+        </div>
+
+        <div class="bottom-header">
+            <div class="profile-display">
+              <div class="clickable profile-pic-large"></div>
+              <div class="name-greeting">
+                  <div class="greeting">Hi there,</div>
+                  <div class="name">Yasuo S. Yone (@cancer)</div>
+              </div>
+            </div>
+            <div class="make-post">
+              <input type="button" class="head-button clickable" value="New" />
+              <input type="button" class="head-button clickable" value="Upload" />
+              <input type="button" class="head-button clickable" value="Share" />
+            </div>            
+        </div>
       </div>
+
+      <!-- Main -->
+
     </div>
-    <div class="header">
-      <div class="con">
-        <span class="title overview">Overview</span>
-        <input type="text" name="search-box" id="search-box" placeholder="Search..." />
-        <span class="material-icons">search</span>
-      </div>
-
-      <div class="cont">
-        <span class="material-symbols-outlined" id="notif">notifications_active
-        </span>
-        <div class="pic-container"></div>
-        <p>Yasuo S. Yone</p>
-      </div>
-    </div>
-
-    <div class="info">
-      <div>
-        <div class="profile-container"></div>
-        <div class="greet">
-          <span>Hi there,</span> Yasuo S. Yone (@Cancer)
-        </div>
-      </div>
-      <div class="button-container">
-        <input type="button" value="New" />
-        <input type="button" value="Upload" />
-        <input type="button" value="Share" />
-      </div>
-    </div>
-
-    <div class="title-container">
-      <h3 class="left-title">Your Projects</h3>
-      <h3 class="right-title">Announecment</h3>
-    </div>
-
-    <div class="main-container">
-
-      <div class="con-1">
-        <div class="card">
-          <h3 class="card-title">Super magical projects</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor et ab adipisci
-            laudantium dolorum ex maxime facilis harum reiciendis, nobis laborum.
-            Consequuntur numquam veniam dolorum velit doloremque nihil corporis excepturi.</p>
-
-          <div class="icon-container">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3 class="card-title">Super magical projects</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor et ab adipisci
-            laudantium dolorum ex maxime facilis harum reiciendis, nobis laborum.
-            Consequuntur numquam veniam dolorum velit doloremque nihil corporis excepturi.</p>
-
-          <div class="icon-container">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3 class="card-title">Super magical projects</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor et ab adipisci
-            laudantium dolorum ex maxime facilis harum reiciendis, nobis laborum.
-            Consequuntur numquam veniam dolorum velit doloremque nihil corporis excepturi.</p>
-
-          <div class="icon-container">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3 class="card-title">Super magical projects</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor et ab adipisci
-            laudantium dolorum ex maxime facilis harum reiciendis, nobis laborum.
-            Consequuntur numquam veniam dolorum velit doloremque nihil corporis excepturi.</p>
-
-          <div class="icon-container">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3 class="card-title">Super magical projects</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor et ab adipisci
-            laudantium dolorum ex maxime facilis harum reiciendis, nobis laborum.
-            Consequuntur numquam veniam dolorum velit doloremque nihil corporis excepturi.</p>
-
-          <div class="icon-container">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3 class="card-title">Super magical projects</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor et ab adipisci
-            laudantium dolorum ex maxime facilis harum reiciendis, nobis laborum.
-            Consequuntur numquam veniam dolorum velit doloremque nihil corporis excepturi.</p>
-
-          <div class="icon-container">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-      <div class="con-2">
-        <div class="a-container">
-          <div class="a">
-            <h3>Site Maintenance</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et consequatur
-              rem maiores voluptatum! Distinctio nisi ipsa perspiciatis obcaecati magnam,
-              nostrum unde aperiam assumenda voluptatum omnis, dolorum numquam ea dolor!</p>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="a">
-            <h3>Site Maintenance</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et consequatur
-              rem maiores voluptatum! Distinctio nisi ipsa perspiciatis obcaecati magnam,
-              nostrum unde aperiam assumenda voluptatum omnis, dolorum numquam ea dolor!</p>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="a">
-            <h3>Site Maintenance</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et consequatur
-              rem maiores voluptatum! Distinctio nisi ipsa perspiciatis obcaecati magnam,
-              nostrum unde aperiam assumenda voluptatum omnis, dolorum numquam ea dolor!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-  </div>
-  </div>
-</body>
-
+  </body>
 </html>
