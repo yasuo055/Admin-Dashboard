@@ -362,7 +362,8 @@ button[type="button"]:hover {
 .announcements-container {
     background-color: white;
     box-shadow: 0px 2px 3px rgb(175, 175, 175);
-    padding: 20px 20px 6px 25px;
+    padding: 20px;
+    padding-left: 24px;
     border-radius: 5px;
     min-width: 231px;
 }
