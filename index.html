@@ -1,283 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      user-name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Admin-Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
-    />
-  </head>
 
-  <body>
-    <div class="container">
-      <!-- Sidebar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta user-name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin-Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+</head>
 
-      <div class="sidebar">
-        <div class="logo-container">
-          <span class="material-symbols-outlined" id="dashboard-icon">
-            dashboard
-          </span>
-          <p class="logo">Dashboard</p>
-        </div>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
 
-        <div class="sidebar-nav">
-          <ul>
-            <li>
-              <button type="button">
-                <span class="material-icons">home</span>Home
-              </button>
-            </li>
-            <li>
-              <button type="button">
-                <span class="material-icons">account_circle</span>Profile
-              </button>
-            </li>
-            <li>
-              <button type="button">
-                <span class="material-icons">message</span>Messages
-              </button>
-            </li>
-            <li>
-              <button type="button">
-                <span class="material-symbols-outlined"> schedule </span>
-                History
-              </button>
-            </li>
-            <li>
-              <button type="button">
-                <span class="material-symbols-outlined"> task</span>Tasks
-              </button>
-            </li>
-            <li>
-              <button type="button">
-                <span class="material-icons">forum</span>Communication
-              </button>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <button type="button">
-                <span class="material-icons">settings</span>Settings
-              </button>
-            </li>
-            <li>
-              <button type="button">
-                <span class="material-icons">support</span>Support
-              </button>
-            </li>
-            <li>
-              <button type="button">
-                <span class="material-icons">privacy_tip</span>Privacy
-              </button>
-            </li>
-          </ul>
-        </div>
+    <div class="sidebar">
+      <div class="logo-container">
+        <span class="material-symbols-outlined" id="dashboard-icon">
+          dashboard
+        </span>
+        <p class="logo">Dashboard</p>
       </div>
 
-      <!-- Header -->
+      <div class="sidebar-nav">
+        <ul>
+          <li>
+            <button type="button">
+              <span class="material-icons">home</span>Home
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="material-icons">account_circle</span>Profile
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="material-icons">message</span>Messages
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="material-symbols-outlined"> schedule </span>
+              History
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="material-symbols-outlined"> task</span>Tasks
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="material-icons">forum</span>Communication
+            </button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <button type="button">
+              <span class="material-icons">settings</span>Settings
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="material-icons">support</span>Support
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="material-icons">privacy_tip</span>Privacy
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-      <div class="header">
-        <div class="upper-header">
-          <div class="search-bar">
-            <div class="search-img clickable">
-              <span class="material-icons search-icon">search</span>
-            </div>
-            <!-- for search-box -->
-            <form id="myform" method="get" action="#">
-              <input
-                class="search-input"
-                type="text"
-                id="search-result"
-                user-name="search-result"
-                value=""
-              />
-            </form>
-          </div>
+    <!-- Header -->
 
-          <div class="profile-bar">
-            <div class="clickable prof-bar">
-              <span class="material-symbols-outlined" id="notif"
-                >notifications_active
-              </span>
-              <div class="profile-pic-small"></div>
-              <div class="clickable">Yasuo S. Yone</div>
-            </div>
+    <div class="header">
+      <div class="upper-header">
+        <div class="search-bar">
+          <div class="search-img clickable">
+            <span class="material-icons search-icon">search</span>
           </div>
+          <!-- for search-box -->
+          <form id="myform" method="get" action="#">
+            <input class="search-input" type="text" id="search-result" user-name="search-result" value="" />
+          </form>
         </div>
 
-        <div class="lower-header">
-          <div class="profile-display">
-            <div class="clickable profile-pic-large"></div>
-            <div class="user-greetings">
-              <div class="greetings">Hi there,</div>
-              <div class="user-name">Yasuo S. Yone (@cancer)</div>
-            </div>
-          </div>
-          <div class="button-container">
-            <input type="button" class="header-button clickable" value="New" />
-            <input
-              type="button"
-              class="header-button clickable"
-              value="Upload"
-            />
-            <input
-              type="button"
-              class="header-button clickable"
-              value="Share"
-            />
+        <div class="profile-bar">
+          <div class="clickable prof-bar">
+            <span class="material-symbols-outlined" id="notif">notifications_active
+            </span>
+            <div class="profile-pic-small"></div>
+            <div class="clickable">Yasuo S. Yone</div>
           </div>
         </div>
       </div>
 
-      <!-- Main -->
-
-      <div class="main">
-        <div class="project-display">
-          <div class="project-section-heading">Your Projects</div>
-          <div class="projects-container">
-            <div class="project">
-              <div class="project-text">
-                <div class="project-heading">Super Cool Project</div>
-                <div class="project-description">
-                  Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
-                  nostrud exercitation.
-                </div>
-              </div>
-              <div class="project-interact-container">
-                <div class="icon-container">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="project">
-              <div class="project-text">
-                <div class="project-heading">Super Cool Project</div>
-                <div class="project-description">
-                  Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
-                  nostrud exercitation.
-                </div>
-              </div>
-              <div class="project-interact-container">
-                <div class="icon-container">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="project">
-              <div class="project-text">
-                <div class="project-heading">Super Cool Project</div>
-                <div class="project-description">
-                  Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
-                  nostrud exercitation.
-                </div>
-              </div>
-              <div class="project-interact-container">
-                <div class="icon-container">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="project">
-              <div class="project-text">
-                <div class="project-heading">Super Cool Project</div>
-                <div class="project-description">
-                  Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
-                  nostrud exercitation.
-                </div>
-              </div>
-              <div class="project-interact-container">
-                <div class="icon-container">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="project">
-              <div class="project-text">
-                <div class="project-heading">Super Cool Project</div>
-                <div class="project-description">
-                  Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
-                  nostrud exercitation.
-                </div>
-              </div>
-              <div class="project-interact-container">
-                <div class="icon-container">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="project">
-              <div class="project-text">
-                <div class="project-heading">Super Cool Project</div>
-                <div class="project-description">
-                  Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
-                  nostrud exercitation.
-                </div>
-              </div>
-              <div class="project-interact-container">
-                <div class="icon-container">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                </div>
-              </div>
-            </div>
+      <div class="lower-header">
+        <div class="profile-display">
+          <div class="clickable profile-pic-large"></div>
+          <div class="user-greetings">
+            <div class="greetings">Hi there,</div>
+            <div class="user-name">Yasuo S. Yone (@cancer)</div>
           </div>
         </div>
-
-        <div class="announcements-section">
-          <div class="announcements-section-heading">Announcements</div>
-          <div class="announcements-container">
-            <div class="announcement-heading">Site Maintenance</div>
-            <div class="announcement-description">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </div>
-            <hr />
-            <div class="announcement-heading">Community Share Day</div>
-            <div class="announcement-description">
-              Ut enim ad minim veniam, quis nostrud exercitation.
-            </div>
-            <hr />
-            <div class="announcement-heading">Updated Privacy Policy</div>
-            <div class="announcement-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
-            </div>
-          </div>
-        </div>
-
-        <div class="trending-profiles-section">
-         
-            </div>
-          </div>
+        <div class="button-container">
+          <input type="button" class="header-button clickable" value="New" />
+          <input type="button" class="header-button clickable" value="Upload" />
+          <input type="button" class="header-button clickable" value="Share" />
         </div>
       </div>
     </div>
-  </body>
+
+    <!-- Main -->
+
+    <div class="main">
+      <div class="project-display">
+        <div class="project-section-heading">Your Projects</div>
+        <div class="projects-container">
+          <div class="project">
+            <div class="project-text">
+              <div class="project-heading">Super Cool Project</div>
+              <div class="project-description">
+                Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
+                nostrud exercitation.
+              </div>
+            </div>
+            <div class="project-interact-container">
+              <div class="icon-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-text">
+              <div class="project-heading">Super Cool Project</div>
+              <div class="project-description">
+                Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
+                nostrud exercitation.
+              </div>
+            </div>
+            <div class="project-interact-container">
+              <div class="icon-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-text">
+              <div class="project-heading">Super Cool Project</div>
+              <div class="project-description">
+                Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
+                nostrud exercitation.
+              </div>
+            </div>
+            <div class="project-interact-container">
+              <div class="icon-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-text">
+              <div class="project-heading">Super Cool Project</div>
+              <div class="project-description">
+                Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
+                nostrud exercitation.
+              </div>
+            </div>
+            <div class="project-interact-container">
+              <div class="icon-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-text">
+              <div class="project-heading">Super Cool Project</div>
+              <div class="project-description">
+                Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
+                nostrud exercitation.
+              </div>
+            </div>
+            <div class="project-interact-container">
+              <div class="icon-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-text">
+              <div class="project-heading">Super Cool Project</div>
+              <div class="project-description">
+                Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis
+                nostrud exercitation.
+              </div>
+            </div>
+            <div class="project-interact-container">
+              <div class="icon-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="announcements-section">
+        <div class="announcements-section-heading">Announcements</div>
+        <div class="announcements-container">
+          <div class="announcement-heading">Site Maintenance</div>
+          <div class="announcement-description">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </div>
+          <hr />
+          <div class="announcement-heading">Community Share Day</div>
+          <div class="announcement-description">
+            Ut enim ad minim veniam, quis nostrud exercitation.
+          </div>
+          <hr />
+          <div class="announcement-heading">Updated Privacy Policy</div>
+          <div class="announcement-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="trending-profiles-section">
+        <div class="announcements-section-heading">Trending</div>
+        <div class="trending-container">
+          <div class="trending-profile">
+            <div><img class="profile-pic-small" src=""></div>
+            <div class="trending-profile-info">
+              <div class="trending-username">@Katarina</div>
+              <div class="trending-project">Peace Destroyer</div>
+            </div>
+          </div>
+          <div class="trending-profile">
+            <div><img class="profile-pic-small" src=""></div>
+            <div class="trending-profile-info">
+              <div class="trending-username">@Yasuo055</div>
+              <div class="trending-project">Super Cook</div>
+            </div>
+          </div>
+          <div class="trending-profile">
+            <div><img class="profile-pic-small" src=""></div>
+            <div class="trending-profile-info">
+              <div class="trending-username">@Loonie</div>
+              <div class="trending-project">One line man</div>
+            </div>
+          </div>
+          <div class="trending-profile">
+            <div><img class="profile-pic-small" src=""></div>
+            <div class="trending-profile-info">
+              <div class="trending-username">@Loonie</div>
+              <div class="trending-project">One line man</div>
+            </div>
+          </div>
+          <div class="trending-profile">
+            <div><img class="profile-pic-small" src=""></div>
+            <div class="trending-profile-info">
+              <div class="trending-username">@Abra</div>
+              <div class="trending-project">Abra kadabra</div>
+            </div>
+          </div>
+          <div class="trending-profile">
+            <div><img class="profile-pic-small" src=""></div>
+            <div class="trending-profile-info">
+              <div class="trending-username">@Darius</div>
+              <div class="trending-project">The one axe</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+
 </html>

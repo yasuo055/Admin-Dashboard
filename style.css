@@ -120,7 +120,7 @@ ul {
 
 button .material-icons,
 button .material-symbols-outlined {
-  margin-right: 32px;
+  margin-right: 24px;
   /*Spacing between icon and text on a button */
 }
 
@@ -230,7 +230,7 @@ button[type="button"]:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px 0px 30px;
+  padding: 20px 20px 12px 30px;
 }
 
 .profile-display {
@@ -256,7 +256,7 @@ button[type="button"]:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 25vw;
-  max-width: 276px;
+  max-width: 380px;
   min-width: 263px;
 }
 
@@ -264,9 +264,9 @@ button[type="button"]:hover {
   color: white;
   font-weight: 700;
   background-color: #5e73ff;
-  width: 75px;
-  height: 30px;
-  border-radius: 15px;
+  width: 100px;
+  height: 36px;
+  border-radius: 16px;
   border: none;
 }
 
@@ -279,7 +279,7 @@ button[type="button"]:hover {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 18px 20px 2px 20px;
+  padding: 18px 20px 18px 20px;
   max-height: 100%;
 }
 
@@ -290,47 +290,44 @@ button[type="button"]:hover {
 }
 
 .project-section-heading {
-    font-weight: 500;
-    font-size: 19px;
-    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
 }
 
 .projects-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 12px;
 }
 
 .project {
     background-color: white;
     width: 48%;
     height: 180px;
-    margin-bottom: 20px;
     margin-right: 10px;
     border-radius: 5px;
     min-width: 265px;
     box-shadow: 0px 2px 3px rgb(175, 175, 175);
-    padding: 30px 20px 20px 20px;
+    padding: 18px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(left, #88c7ff, #88c7ff 2%, transparent 2%, transparent 100%);
-    background-image: -webkit-linear-gradient(left, #88c7ff, #88c7ff 2%, transparent 2%, transparent 100%)  
+    border-radius: 4px;
+    border-left: 8px solid #5e73ff;
 }
 
 .project-heading {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
+    margin-bottom: 12px;
 }
 
 .project-description {
     font-size: 13px;
     color: rgb(88, 88, 88);
-}
-
-.interactions {
-    display: flex;
-    justify-content: flex-end;
+    line-height: 1.4;
 }
 
 .project-interact-container {
@@ -350,11 +347,6 @@ button[type="button"]:hover {
   height: 18px;
 }
 
-ul li {
-    list-style: none;
-    margin-left: 20px;
-}
-
 .announcements-section {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -362,15 +354,16 @@ ul li {
 }
 
 .announcements-section-heading {
-    font-weight: 500;
-    font-size: 19px;
-    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
 }
 
 .announcements-container {
     background-color: white;
     box-shadow: 0px 2px 3px rgb(175, 175, 175);
-    padding: 20px 20px 20px 25px;
+    padding: 20px;
+    padding-left: 24px;
     border-radius: 5px;
     min-width: 231px;
 }
@@ -379,6 +372,7 @@ ul li {
     font-weight: 500;
     font-size: 13px;
     margin-bottom: 3px;
+    color: var(--link-color);
 }
 
 .announcement-description {
@@ -390,8 +384,6 @@ hr {
     margin: 15px 0 15px 0;
 }
 
-
-
 .trending-profiles-section {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -400,7 +392,7 @@ hr {
 .trending-profile {
     display: flex;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
 }
 
 .trending-profile img {
@@ -410,6 +402,11 @@ hr {
 .trending-username {
     font-size: 12px;
     font-weight: 400px;
+    color: #5e73ff;
+}
+
+.trending-username:hover {
+  text-decoration: underline;
 }
 
 .trending-project {
@@ -420,11 +417,17 @@ hr {
 .trending-container {
     background-color: white;
     box-shadow: 0px 2px 3px rgb(175, 175, 175);
-    padding: 20px 20px 6px 25px;
+    padding: 20px;
+    padding-bottom: 22px;
     border-radius: 5px;
     min-width: 231px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+
+/* copy from gods */
 
 @media (max-width: 1052px) {    
   .project {
@@ -462,9 +465,13 @@ hr {
 .announcement-heading:hover {
   cursor: pointer;
   -webkit-transform: scale(1.01);
+  text-decoration: underline;
 }
 
 .trending-profile:hover {
   cursor: pointer;
   -webkit-transform: scale(1.03);
 }
+
+/* end of copy from gods */
+
