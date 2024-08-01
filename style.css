@@ -163,6 +163,7 @@ button[type="button"]:hover {
   justify-content: space-between;
   align-items: center;
   height: 48px;
+  padding-top: 8px;
 }
 
 .search-bar {
@@ -210,17 +211,17 @@ button[type="button"]:hover {
 }
 
 .profile-pic-small {
-  width: 24px;
-  height: 24px;
-  border-radius: 30px;
+  width: 32px;
+  height: 32px;
+  border-radius: 42px;
   border: 1px solid rgb(197, 197, 197);
   flex: 0 0 auto;
 }
 
 .profile-pic-large {
-  width: 50px;
-  height: 50px;
-  border-radius: 24px;
+  width: 76px;
+  height: 76px;
+  border-radius: 64px;
   border: 1px solid rgb(197, 197, 197);
   margin-right: 15px;
   flex: 0 0 auto;
@@ -341,11 +342,9 @@ button[type="button"]:hover {
   gap: 12px ;
 }
 
-.circle {
-  border: 2px solid #141414;
-  border-radius: 24px;
-  width: 18px;
-  height: 18px;
+.icon {
+  width: 24px;
+  height: 24px;
 }
 
 .announcements-section {
@@ -393,7 +392,7 @@ hr {
 .trending-profile {
     display: flex;
     align-items: center;
-    padding-bottom: 8px;
+    padding-bottom: 2px;
 }
 
 .trending-profile img {
@@ -418,8 +417,7 @@ hr {
 .trending-container {
     background-color: white;
     box-shadow: 0px 2px 3px rgb(175, 175, 175);
-    padding: 20px;
-    padding-bottom: 22px;
+    padding: 18px;
     border-radius: 5px;
     min-width: 231px;
     display: flex;
