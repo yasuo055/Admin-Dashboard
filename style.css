@@ -254,10 +254,11 @@ button[type="button"]:hover {
 .button-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: none;
   width: 25vw;
   max-width: 380px;
   min-width: 263px;
+  gap: 12px;
 }
 
 .header-button {
