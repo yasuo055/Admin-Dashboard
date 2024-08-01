@@ -426,6 +426,7 @@ hr {
     justify-content: center;
 }
 
+
 /* copy from gods */
 
 @media (max-width: 1052px) {    
@@ -450,8 +451,6 @@ hr {
   
 }
 
-/* end of copy from gods */
-
 .clickable:hover {
   cursor: pointer;
   -webkit-transform: scale(1.07);
@@ -473,3 +472,6 @@ hr {
   cursor: pointer;
   -webkit-transform: scale(1.03);
 }
+
+/* end of copy from gods */
+
